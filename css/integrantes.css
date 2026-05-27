@@ -1,0 +1,102 @@
+.integrantes {
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.integrantes__banner {
+  background-color: #001f4b ;
+  padding: 1rem 10rem 10rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.integrantes__titulo {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.integrantes__subtitulo {
+  margin-top: 2rem;
+  color: #ffffff;
+  font-size: 1.7rem;
+  font-style: italic;
+}
+
+.integrantes__conteudo {
+  padding: 0 2rem 5rem;
+}
+
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: -5rem auto 0;
+}
+
+.card {
+  background: transparent;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.card img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+
+.card h2 {
+  color: #000000;
+  font-size: 1.3rem;
+  margin: 0 0 0.8rem;
+}
+
+.card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card li {
+  color: #222222;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+/* CORRIGIR AQUI: cor dos links dentro dos cards */
+.card a {
+  color: #3b7fc4;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* CORRIGIR AQUI: em telas menores, os cards quebram linha para nao ficarem apertados */
+@media (max-width: 900px) {
+  .card_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .integrantes__titulo {
+    font-size: 2.2rem;
+  }
+
+  .card_container {
+    grid-template-columns: 1fr;
+  }
+}
