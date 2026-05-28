@@ -14,12 +14,10 @@
         <span></span>
       </label>
       <nav class="cabecalho__navbar">
-        <!-- CORRIGIR AQUI: a logo fica fora da lista para poder ficar sozinha na esquerda -->
         <a class="cabecalho__logo-link" href="../index.html">
-          <img src="../img/logo.png" class="logo" alt="Logo EcoSoul">
+          <img src="../assents/logo.png" class="logo" alt="Logo EcoSoul">
         </a>
 
-        <!-- CORRIGIR AQUI: a lista fica apenas com os links para eles poderem ficar centralizados -->
         <ul class="cabecalho__lista">
           <li class="cabecalho__list-item">
             <a class="cabecalho__link cabecalho__link--active" href="../index.html">Home</a>
@@ -39,8 +37,22 @@
         </ul>
       </nav>
     </header>
-    <main>
-        <p>conteúdo principal</p>
+    <main class="contato-main">
+        <form name="dados" action="contato.html" method="get">
+          <fieldset>
+            <legend>Formulário de Contato</legend>
+            <label for="idNome">Nome:</label>
+            <input id="idNome" type="text" name="nome" required><br>
+            <label for="idEmail">E-mail:</label>
+            <input id="idEmail" type="text" name="email" required><br>
+            <label for="idTelefone">Telefone:</label>
+            <input id="idTelefone" type="tel" name="telefone" required><br>
+            <label for="mensagem">Como posso te ajudar*?</label><br>
+            <textarea id="mensagem" name="mensagem" rows="7" cols="100" placeholder="Digite sua mensagem aqui..." required></textarea><br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+          </fieldset>
+        </form>
     </main>
     <footer>
         <p> 2026 Global Solution.&copy; Todos os direitos reservados.</p>
