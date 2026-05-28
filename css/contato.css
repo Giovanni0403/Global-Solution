@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contato-main {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  border-top: 6px solid #002b5c;
+}
+
+/* Título do formulário */
+legend {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #002b5c; /* azul escuro */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #002b5c;
+}
+
+/* Inputs e textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #004080;
+  box-shadow: 0 0 6px rgba(0,64,128,0.3);
+  outline: none;
+}
+
+/* Botões */
+input[type="submit"],
+input[type="reset"] {
+  background: #002b5c; /* azul escuro */
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 10px;
+  transition: 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+  background: #004080; /* azul mais claro no hover */
+  transform: scale(1.05);
+}
+
+input[type="reset"] {
+  background: #999;
+}
+
+input[type="reset"]:hover {
+  background: #666;
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  main {
+    margin: 20px;
+    padding: 20px;
+  }
+  textarea {
+    width: 100%;   /* ocupa toda a largura disponível */
+    height: 150px;
+  }
+}
