@@ -38,21 +38,48 @@
       </nav>
     </header>
     <main class="contato-main">
+      <div class="contato-form-col">
+        <h2 class="contato-titulo">Entrar em contato!</h2>
+        <div class="contato-linha-vermelha"></div>
         <form name="dados" action="contato.html" method="get">
-          <fieldset>
-            <legend>Formulário de Contato</legend>
-            <label for="idNome">Nome:</label>
-            <input id="idNome" type="text" name="nome" required><br>
-            <label for="idEmail">E-mail:</label>
-            <input id="idEmail" type="text" name="email" required><br>
-            <label for="idTelefone">Telefone:</label>
-            <input id="idTelefone" type="tel" name="telefone" required><br>
-            <label for="mensagem">Como posso te ajudar*?</label><br>
-            <textarea id="mensagem" name="mensagem" rows="7" cols="100" placeholder="Digite sua mensagem aqui..." required></textarea><br><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-          </fieldset>
+          <label for="idNome">Nome:</label>
+          <input id="idNome" type="text" name="nome" placeholder="Enter your Name" required>
+          <label for="idEmail">E-mail:</label>
+          <input id="idEmail" type="email" name="email" placeholder="Enter a valid email address" required>
+          <label for="idTelefone">Telefone:</label>
+          <input id="idTelefone" type="tel" name="telefone" placeholder="Enter your phone" required>
+          <label for="mensagem">Como posso te ajudar?</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Enter your message" required></textarea>
+          <div class="contato-botoes">
+            <button type="submit" class="btn-enviar">Enviar</button>
+            <button type="reset" class="btn-limpar">Limpar</button>
+          </div>
         </form>
+      </div>
+
+      <div class="contato-info-col">
+        <div class="contato-info-bloco">
+          <h3>INFORMAÇÕES PARA CONTATO</h3>
+          <p>Nome: Giovanni Lopez Zavam</p>
+          <p>Telefone: (11) 99554-3365</p>
+          <p>Email: rm571403@fiap.com.br</p>
+        </div>
+        <div class="contato-info-bloco">
+          <p>Nome: Murilo  Martins de Campos</p>
+          <p>Telefone: (11) 99760-0533</p>
+          <p>Email: rm572674@fiap.com.br</p>
+        </div>
+        <div class="contato-info-bloco">
+          <p>Nome: Arthur Palacio</p>
+          <p>Telefone: (11) 98882-7148</p>
+          <p>Email: rm573441@fiap.com.br</p>
+        </div>
+        <div class="contato-info-bloco">
+          <p>Nome: Thiago Andrade Silva Piedade</p>
+          <p>Telefone: (11) 96088-8170</p>
+          <p>Email: rm569741@fiap.com.br</p>
+        </div>
+      </div>
     </main>
     <footer>
         <p> 2026 Global Solution.&copy; Todos os direitos reservados.</p>
