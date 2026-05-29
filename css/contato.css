@@ -11,89 +11,146 @@ body {
   line-height: 1.6;
 }
 
+/* ===== CONTATO ===== */
+
 .contato-main {
-  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 900px;
   margin: 50px auto;
-  padding: 30px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-  border-top: 6px solid #002b5c;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 
-/* Título do formulário */
-legend {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #002b5c; /* azul escuro */
-  margin-bottom: 20px;
-  text-align: center;
+/* --- Coluna esquerda (escura) --- */
+.contato-form-col {
+  background: #1e2a3a;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
-/* Labels */
-label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: #002b5c;
+.contato-titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
 }
 
-/* Inputs e textarea */
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
+.contato-linha-vermelha {
+  width: 36px;
+  height: 3px;
+  background:rgb(0, 106, 255);
+  margin-bottom: 0.5rem;
+}
+
+.contato-form-col form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.contato-form-col label{
+  color:rgb(255, 255, 255);
+}
+
+.contato-form-col input[type="text"],
+.contato-form-col input[type="email"],
+.contato-form-col input[type="tel"],
+.contato-form-col textarea {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 2px;
+  color: #fff;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-input:focus,
-textarea:focus {
-  border-color: #004080;
-  box-shadow: 0 0 6px rgba(0,64,128,0.3);
+  box-sizing: border-box;
   outline: none;
+  transition: border-color 0.2s;
 }
 
-/* Botões */
-input[type="submit"],
-input[type="reset"] {
-  background: #002b5c; /* azul escuro */
+.contato-form-col input::placeholder,
+.contato-form-col textarea::placeholder {
+  color: rgba(255,255,255,0.4);
+}
+
+.contato-form-col input:focus,
+.contato-form-col textarea:focus {
+  border-color: rgba(255,255,255,0.6);
+}
+
+.contato-form-col textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contato-botoes {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-enviar {
+  background: #001f4b;
   color: #fff;
   border: none;
-  padding: 12px 25px;
-  border-radius: 6px;
+  padding: 10px 28px;
+  font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
-  font-size: 1rem;
-  margin-right: 10px;
-  transition: 0.3s, transform 0.2s;
+  border-radius: 2px;
+  align-self: flex-start;
+  transition: 0.2s;
 }
 
-input[type="submit"]:hover {
-  background: #004080; /* azul mais claro no hover */
-  transform: scale(1.05);
+.btn-enviar:hover {
+  background: #001f4b;
 }
 
-input[type="reset"] {
+.btn-limpar {
   background: #999;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+  align-self: flex-start;
+  transition: 0.2s;
 }
 
-input[type="reset"]:hover {
+.btn-limpar:hover {
   background: #666;
-  transform: scale(1.05);
 }
 
-/* Responsividade */
-@media (max-width: 600px) {
-  main {
-    margin: 20px;
-    padding: 20px;
-  }
-  textarea {
-    width: 100%;   /* ocupa toda a largura disponível */
-    height: 150px;
-  }
+
+/* --- Coluna direita (clara) --- */
+.contato-info-col {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.contato-info-bloco h3 {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color:rgb(0, 0, 0);
+  margin: 0 0 0.4rem;
+  text-transform: uppercase;
+}
+
+.contato-info-bloco p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.7;
+  font-style: italic;
 }
