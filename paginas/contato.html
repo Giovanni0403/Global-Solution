@@ -5,7 +5,7 @@
     <title>Global Solution</title>
     <link rel="stylesheet" href="../css/main.css">
 </head>
-<body>
+<body class="pagina-contato">
     <header class="cabecalho">
       <input type="checkbox" id="menu-toggle" class="menu-toggle">
       <label for="menu-toggle" class="menu-hamburguer" aria-label="Abrir menu">
@@ -22,7 +22,7 @@
         <!-- CORRIGIR AQUI: a lista fica apenas com os links para eles poderem ficar centralizados -->
         <ul class="cabecalho__lista">
           <li class="cabecalho__list-item">
-            <a class="cabecalho__link cabecalho__link--active" href="../index.html">Home</a>
+            <a class="cabecalho__link" href="../index.html">Home</a>
           </li>
           <li class="cabecalho__list-item">
             <a class="cabecalho__link" href="./integrante.html">Integrantes</a>
@@ -37,7 +37,7 @@
             <a class="cabecalho__link" href="./faq.html">FAQ</a>
           </li>
          <li class="cabecalho__list-item">
-            <a class="cabecalho__link" href="./contato.html">Contato</a>
+            <a class="cabecalho__link cabecalho__link--active" href="./contato.html">Contato</a>
           </li>
         </ul>
       </nav>
@@ -46,7 +46,10 @@
       <div class="contato-form-col">
         <h2 class="contato-titulo">Entrar em contato!</h2>
         <div class="contato-linha-vermelha"></div>
-        <form name="dados" action="contato.html" method="get">
+        <form class="contato-form" id="form-contato" name="dados" action="https://formsubmit.co/ajax/giovanni.zavam2008@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nova mensagem do site SkyLink">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
           <label for="idNome">Nome:</label>
           <input id="idNome" type="text" name="nome" placeholder="Enter your Name" required>
           <label for="idEmail">E-mail:</label>
@@ -59,6 +62,7 @@
             <button type="submit" class="btn-enviar">Enviar</button>
             <button type="reset" class="btn-limpar">Limpar</button>
           </div>
+          <p class="contato-status" id="contato-status" aria-live="polite"></p>
         </form>
       </div>
 
@@ -89,5 +93,6 @@
     <footer>
         <p> 2026 Global Solution.&copy; Todos os direitos reservados.</p>
     </footer>
+    <script src="../js/contato.js"></script>
 </body>
 </html>

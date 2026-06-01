@@ -62,9 +62,15 @@
         </ul>
         <p class="texto-padrao texto-destaque">Defesa Civil · Corpo de Bombeiros · Forças Armadas · Operadoras de Telecom · Organizações Humanitárias · Governos Municipais e Estaduais</p>
         <h4 class="chamada-final">Sua região está preparada para o próximo desastre?</h4>
+        <div class="resposta-final" aria-label="Responder pergunta final">
+          <button class="resposta-final__botao resposta-final__botao--sim" type="button" data-resposta="Sim">Sim</button>
+          <button class="resposta-final__botao resposta-final__botao--nao" type="button" data-resposta="Não">Não</button>
+        </div>
+        <p class="resposta-final__status" id="resposta-final-status" aria-live="polite"></p>
     </main>
     <footer>
         <p> 2026 Global Solution.&copy; Todos os direitos reservados.</p>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>

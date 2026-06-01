@@ -1,49 +1,3 @@
-.pagina-home {
-    position: relative;
-    min-height: 100vh;
-    margin: 0;
-    background:
-        radial-gradient(circle at 18% 18%, rgba(38, 129, 255, 0.35), transparent 26rem),
-        radial-gradient(circle at 82% 12%, rgba(99, 232, 255, 0.18), transparent 20rem),
-        radial-gradient(circle at 50% 100%, rgba(22, 93, 255, 0.22), transparent 28rem),
-        linear-gradient(135deg, #020817 0%, #07142d 48%, #00030a 100%);
-    color: #eef6ff;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
-}
-
-.pagina-home::before,
-.pagina-home::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 0;
-}
-
-.pagina-home .cabecalho,
-.pagina-home .home,
-.pagina-home footer {
-    position: relative;
-    z-index: 1;
-}
-
-.pagina-home::before {
-    background-image:
-        radial-gradient(circle, rgba(255, 255, 255, 0.95) 0 1px, transparent 1.5px),
-        radial-gradient(circle, rgba(111, 211, 255, 0.75) 0 1px, transparent 1.5px);
-    background-position: 0 0, 42px 58px;
-    background-size: 110px 110px, 170px 170px;
-    opacity: 0.62;
-}
-
-.pagina-home::after {
-    background:
-        linear-gradient(115deg, transparent 18%, rgba(96, 185, 255, 0.16) 19%, transparent 22%),
-        radial-gradient(ellipse at 50% 18%, transparent 44%, rgba(92, 192, 255, 0.2) 45%, transparent 46%);
-    opacity: 0.8;
-}
-
 .home {
     width: min(1120px, calc(100% - 2rem));
     margin: 0 auto;
@@ -88,6 +42,64 @@
     box-shadow: 0 0 30px rgba(47, 149, 255, 0.18), inset 0 0 22px rgba(126, 214, 255, 0.08);
     font-size: clamp(1.35rem, 3vw, 2rem);
     text-align: center;
+}
+
+.resposta-final {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.resposta-final__botao {
+    min-width: 130px;
+    padding: 0.9rem 1.5rem;
+    border: 1px solid rgba(126, 214, 255, 0.46);
+    border-radius: 8px;
+    background: rgba(5, 19, 47, 0.78);
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 0 22px rgba(47, 149, 255, 0.16), inset 0 0 18px rgba(126, 214, 255, 0.08);
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resposta-final__botao:hover {
+    transform: translateY(-2px);
+    border-color: rgba(126, 214, 255, 0.8);
+    background: rgba(8, 35, 82, 0.92);
+    box-shadow: 0 0 28px rgba(79, 184, 255, 0.3), inset 0 0 18px rgba(126, 214, 255, 0.12);
+}
+
+.resposta-final__botao:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+    transform: none;
+}
+
+.resposta-final__botao--sim {
+    background: linear-gradient(145deg, rgba(16, 117, 88, 0.92), rgba(5, 34, 49, 0.9));
+}
+
+.resposta-final__botao--nao {
+    background: linear-gradient(145deg, rgba(122, 38, 68, 0.9), rgba(33, 12, 35, 0.9));
+}
+
+.resposta-final__status {
+    min-height: 1.5rem;
+    margin: 0.9rem 0 0;
+    color: #c9e7ff;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.resposta-final__status--sucesso {
+    color: #8ef0c0;
+}
+
+.resposta-final__status--erro {
+    color: #ffb1b1;
 }
 
 .texto-padrao,
@@ -140,11 +152,6 @@
     color: #c9e7ff;
 }
 
-.pagina-home footer {
-    background: #000712;
-    border-top: 1px solid rgba(126, 214, 255, 0.25);
-}
-
 @media (max-width: 700px) {
     .home {
         width: min(100% - 1.2rem, 1120px);
@@ -157,5 +164,13 @@
 
     .card-info {
         min-height: auto;
+    }
+
+    .resposta-final {
+        flex-direction: column;
+    }
+
+    .resposta-final__botao {
+        width: 100%;
     }
 }

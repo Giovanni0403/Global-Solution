@@ -1,3 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f0f4f8;
+    color: #333333;
+    line-height: 1.6;
+}
+
 footer {
     text-align: center;
     padding: 1rem;
@@ -59,8 +72,90 @@ footer {
     text-decoration: none;
 }
 
+.cabecalho__link--active {
+    color: #79d7ff;
+    text-shadow: 0 0 16px rgba(121, 215, 255, 0.8);
+}
+
 .logo{
     width: 180px;
     height: auto;
+}
+
+.pagina-home,
+.pagina-faq,
+.pagina-sobre,
+.pagina-impacto {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    background:
+        radial-gradient(circle at 18% 18%, rgba(38, 129, 255, 0.35), transparent 26rem),
+        radial-gradient(circle at 82% 12%, rgba(99, 232, 255, 0.18), transparent 20rem),
+        radial-gradient(circle at 50% 100%, rgba(22, 93, 255, 0.22), transparent 28rem),
+        linear-gradient(135deg, #020817 0%, #07142d 48%, #00030a 100%);
+    color: #eef6ff;
+    overflow-x: hidden;
+}
+
+.pagina-home::before,
+.pagina-home::after,
+.pagina-faq::before,
+.pagina-faq::after,
+.pagina-sobre::before,
+.pagina-sobre::after,
+.pagina-impacto::before,
+.pagina-impacto::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.pagina-home::before,
+.pagina-faq::before,
+.pagina-sobre::before,
+.pagina-impacto::before {
+    background-image:
+        radial-gradient(circle, rgba(255, 255, 255, 0.95) 0 1px, transparent 1.5px),
+        radial-gradient(circle, rgba(111, 211, 255, 0.75) 0 1px, transparent 1.5px);
+    background-position: 0 0, 42px 58px;
+    background-size: 110px 110px, 170px 170px;
+    opacity: 0.62;
+}
+
+.pagina-home::after,
+.pagina-faq::after,
+.pagina-sobre::after,
+.pagina-impacto::after {
+    background:
+        linear-gradient(115deg, transparent 18%, rgba(96, 185, 255, 0.16) 19%, transparent 22%),
+        radial-gradient(ellipse at 50% 18%, transparent 44%, rgba(92, 192, 255, 0.2) 45%, transparent 46%);
+    opacity: 0.8;
+}
+
+.pagina-home .cabecalho,
+.pagina-home main,
+.pagina-home footer,
+.pagina-faq .cabecalho,
+.pagina-faq main,
+.pagina-faq footer,
+.pagina-sobre .cabecalho,
+.pagina-sobre main,
+.pagina-sobre footer,
+.pagina-impacto .cabecalho,
+.pagina-impacto main,
+.pagina-impacto footer {
+    position: relative;
+    z-index: 1;
+}
+
+.pagina-home footer,
+.pagina-faq footer,
+.pagina-sobre footer,
+.pagina-impacto footer {
+    background: #020712;
+    border-top: 1px solid rgba(77, 207, 255, 0.24);
 }
 
