@@ -1,0 +1,161 @@
+.pagina-sobre {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    background:
+        radial-gradient(circle at 12% 24%, rgba(28, 211, 168, 0.28), transparent 24rem),
+        radial-gradient(circle at 88% 18%, rgba(72, 148, 255, 0.22), transparent 22rem),
+        radial-gradient(circle at 62% 82%, rgba(155, 91, 255, 0.18), transparent 24rem),
+        linear-gradient(145deg, #020711 0%, #061528 48%, #01040a 100%);
+    color: #edfaff;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.pagina-sobre::before,
+.pagina-sobre::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.pagina-sobre::before {
+    background-image:
+        radial-gradient(circle, rgba(255, 255, 255, 0.86) 0 1px, transparent 1.5px),
+        radial-gradient(circle, rgba(76, 229, 203, 0.7) 0 1px, transparent 1.5px);
+    background-position: 20px 30px, 72px 86px;
+    background-size: 130px 130px, 210px 210px;
+    opacity: 0.48;
+}
+
+.pagina-sobre::after {
+    background:
+        linear-gradient(100deg, transparent 11%, rgba(44, 230, 191, 0.14) 12%, transparent 16%),
+        linear-gradient(78deg, transparent 62%, rgba(91, 162, 255, 0.12) 63%, transparent 68%);
+}
+
+.pagina-sobre .cabecalho,
+.pagina-sobre .sobre,
+.pagina-sobre footer {
+    position: relative;
+    z-index: 1;
+}
+
+.sobre {
+    width: min(1080px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 4.8rem 0 4.5rem;
+}
+
+.sobre__titulo {
+    max-width: 820px;
+    margin: 0 0 1.2rem;
+    color: #ffffff;
+    font-size: clamp(2.2rem, 6vw, 4.6rem);
+    line-height: 1.02;
+    text-shadow: 0 0 22px rgba(79, 197, 255, 0.38);
+}
+
+.sobre__introducao {
+    max-width: 920px;
+    margin: 0 0 2.7rem;
+    padding: 1.4rem 1.5rem;
+    border: 1px solid rgba(93, 198, 255, 0.3);
+    border-left: 6px solid #4dcfff;
+    border-radius: 8px;
+    background:
+        linear-gradient(90deg, rgba(77, 207, 255, 0.14), transparent 42%),
+        rgba(3, 15, 31, 0.82);
+    color: #def6ff;
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    line-height: 1.7;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24), inset 0 0 24px rgba(77, 207, 255, 0.05);
+}
+
+.sobre__subtitulo,
+.sobre__destaque-titulo {
+    color: #ffffff;
+    text-shadow: 0 0 16px rgba(79, 197, 255, 0.38);
+}
+
+.sobre__subtitulo {
+    display: inline-block;
+    margin: 2rem 0 0.8rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 2px solid #47e3c4;
+    font-size: clamp(1.45rem, 2.8vw, 2.1rem);
+}
+
+.sobre__card {
+    max-width: 820px;
+    margin: 0 0 1.3rem;
+    padding: 1.25rem 1.35rem;
+    border: 1px solid rgba(93, 198, 255, 0.28);
+    border-radius: 8px;
+    background:
+        linear-gradient(180deg, rgba(10, 39, 64, 0.88), rgba(4, 13, 28, 0.9)),
+        repeating-linear-gradient(90deg, transparent 0 16px, rgba(255, 255, 255, 0.03) 16px 17px);
+    color: #d9ecff;
+    font-size: 1.08rem;
+    line-height: 1.75;
+    box-shadow: inset 0 0 20px rgba(79, 197, 255, 0.06), 0 16px 34px rgba(0, 0, 0, 0.22);
+}
+
+.sobre__destaque-titulo {
+    margin: 3rem 0 1rem;
+    font-size: clamp(1.4rem, 2.8vw, 2rem);
+}
+
+.sobre__texto {
+    max-width: 900px;
+    margin: 0 0 1rem;
+    color: #dceeff;
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+
+.sobre__frase {
+    max-width: 760px;
+    margin: 1.7rem 0 2.4rem;
+    padding: 1.15rem 1.35rem;
+    border: 1px solid rgba(71, 227, 196, 0.38);
+    border-left: 6px solid #47e3c4;
+    border-radius: 8px;
+    background: rgba(2, 20, 34, 0.82);
+    color: #ffffff;
+    font-size: clamp(1.25rem, 2.5vw, 1.8rem);
+    font-weight: 700;
+    line-height: 1.35;
+    text-align: left;
+    box-shadow: 0 0 30px rgba(71, 227, 196, 0.14);
+}
+
+.sobre__texto--final {
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid rgba(77, 207, 255, 0.28);
+}
+
+.pagina-sobre footer {
+    background: #020712;
+    border-top: 1px solid rgba(77, 207, 255, 0.24);
+}
+
+@media (max-width: 700px) {
+    .sobre {
+        width: min(100% - 1.2rem, 1080px);
+        padding-top: 3.5rem;
+    }
+
+    .sobre__introducao,
+    .sobre__card,
+    .sobre__frase {
+        padding: 1rem;
+    }
+
+    .sobre__frase {
+        margin-left: 0;
+        text-align: left;
+    }
+}
