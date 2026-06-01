@@ -1,0 +1,202 @@
+.pagina-impacto {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    background:
+        radial-gradient(circle at 18% 18%, rgba(38, 129, 255, 0.35), transparent 26rem),
+        radial-gradient(circle at 82% 12%, rgba(99, 232, 255, 0.18), transparent 20rem),
+        radial-gradient(circle at 50% 100%, rgba(22, 93, 255, 0.22), transparent 28rem),
+        linear-gradient(135deg, #020817 0%, #07142d 48%, #00030a 100%);
+    color: #eef6ff;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.pagina-impacto::before,
+.pagina-impacto::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.pagina-impacto::before {
+    background-image:
+        radial-gradient(circle, rgba(255, 255, 255, 0.95) 0 1px, transparent 1.5px),
+        radial-gradient(circle, rgba(111, 211, 255, 0.75) 0 1px, transparent 1.5px);
+    background-position: 0 0, 42px 58px;
+    background-size: 110px 110px, 170px 170px;
+    opacity: 0.62;
+}
+
+.pagina-impacto::after {
+    background:
+        linear-gradient(115deg, transparent 18%, rgba(96, 185, 255, 0.16) 19%, transparent 22%),
+        radial-gradient(ellipse at 50% 18%, transparent 44%, rgba(92, 192, 255, 0.2) 45%, transparent 46%);
+    opacity: 0.8;
+}
+
+.pagina-impacto .cabecalho,
+.pagina-impacto .impacto,
+.pagina-impacto footer {
+    position: relative;
+    z-index: 1;
+}
+
+.impacto {
+    width: min(1120px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 5rem 0 4.5rem;
+}
+
+.impacto__titulo {
+    max-width: 860px;
+    margin: 0 0 1.2rem;
+    color: #ffffff;
+    font-size: clamp(2.35rem, 7vw, 5.2rem);
+    line-height: 1;
+    text-shadow: 0 0 26px rgba(77, 207, 255, 0.46);
+}
+
+.impacto__subtitulo {
+    max-width: 860px;
+    margin: 0 0 3rem;
+    color: #c9edff;
+    font-size: clamp(1.15rem, 2.4vw, 1.7rem);
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+.impacto__secao {
+    display: inline-block;
+    margin: 2.7rem 0 1rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 2px solid #47e3c4;
+    color: #ffffff;
+    font-size: clamp(1.45rem, 2.8vw, 2.1rem);
+    text-shadow: 0 0 18px rgba(71, 227, 196, 0.38);
+}
+
+.impacto__texto {
+    max-width: 930px;
+    margin: 0 0 1.2rem;
+    color: #dceeff;
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+
+.impacto__texto--destaque,
+.impacto__texto--final {
+    padding: 1.25rem 1.4rem;
+    border: 1px solid rgba(77, 207, 255, 0.3);
+    border-left: 6px solid #4dcfff;
+    border-radius: 8px;
+    background: rgba(3, 15, 31, 0.78);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24), inset 0 0 22px rgba(77, 207, 255, 0.05);
+}
+
+.impacto__texto--final {
+    border-left-color: #47e3c4;
+}
+
+.impacto__lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    gap: 1rem;
+    margin: 1.4rem 0 0.4rem;
+    padding: 0;
+    list-style: none;
+}
+
+.impacto__card {
+    position: relative;
+    min-height: 150px;
+    padding: 1.25rem;
+    border: 1px solid rgba(93, 198, 255, 0.28);
+    border-radius: 8px;
+    background:
+        linear-gradient(180deg, rgba(8, 35, 58, 0.9), rgba(3, 12, 26, 0.88)),
+        linear-gradient(90deg, rgba(71, 227, 196, 0.1), transparent 45%);
+    color: #d9ecff;
+    font-size: 1.04rem;
+    line-height: 1.65;
+    box-shadow: inset 0 0 20px rgba(79, 197, 255, 0.06), 0 16px 34px rgba(0, 0, 0, 0.22);
+}
+
+.impacto__card::before {
+    content: "";
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 2.2rem;
+    height: 0.2rem;
+    border-radius: 999px;
+    background: #47e3c4;
+    box-shadow: 0 0 16px rgba(71, 227, 196, 0.8);
+}
+
+.impacto__tabela {
+    width: 100%;
+    margin: 1.3rem 0 0.8rem;
+    border-collapse: collapse;
+    overflow: hidden;
+    border: 1px solid rgba(93, 198, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(3, 15, 31, 0.82);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24);
+}
+
+.impacto__tabela th,
+.impacto__tabela td {
+    padding: 1rem 1.1rem;
+    border-bottom: 1px solid rgba(93, 198, 255, 0.18);
+    color: #dceeff;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.impacto__tabela th {
+    background: linear-gradient(90deg, rgba(77, 207, 255, 0.2), rgba(71, 227, 196, 0.12));
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.impacto__tabela tr:last-child td {
+    border-bottom: 0;
+}
+
+.impacto__tabela tbody tr:hover {
+    background: rgba(77, 207, 255, 0.07);
+}
+
+.pagina-impacto footer {
+    background: #020712;
+    border-top: 1px solid rgba(77, 207, 255, 0.24);
+}
+
+@media (max-width: 760px) {
+    .impacto {
+        width: min(100% - 1.2rem, 1120px);
+        padding-top: 3.5rem;
+    }
+
+    .impacto__lista {
+        grid-template-columns: 1fr;
+    }
+
+    .impacto__card {
+        min-height: auto;
+    }
+
+    .impacto__tabela {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .impacto__tabela th,
+    .impacto__tabela td {
+        min-width: 220px;
+    }
+}
