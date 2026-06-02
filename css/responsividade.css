@@ -1,4 +1,37 @@
-@media (max-width: 700px) {
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media (min-width: 1025px) {
+    .cabecalho__navbar {
+        grid-template-columns: minmax(130px, 1fr) minmax(0, auto) minmax(130px, 1fr);
+        max-width: 100%;
+        padding: 0 1.5rem;
+    }
+
+    .cabecalho__logo-link {
+        margin-left: clamp(0rem, 4vw, 8rem);
+    }
+
+    .cabecalho__lista {
+        max-width: 100%;
+        gap: clamp(0.6rem, 1.4vw, 2rem);
+    }
+
+    .cabecalho__link {
+        padding: 0.5rem clamp(0.35rem, 0.8vw, 1rem);
+        font-size: clamp(1.1rem, 1.7vw, 2.5rem);
+        white-space: nowrap;
+    }
+
+    .logo {
+        width: clamp(120px, 9vw, 180px);
+    }
+}
+
+@media (max-width: 1024px) {
     .cabecalho {
         position: sticky;
         top: 0;
@@ -162,6 +195,42 @@
         font-size: 0.92rem;
         overflow-wrap: anywhere;
         word-break: normal;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1024px) {
+    .cabecalho__navbar {
+        min-height: 104px;
+        padding: 1rem 1.5rem;
+    }
+
+    .menu-hamburguer {
+        top: 1.7rem;
+        right: 1.5rem;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    .cabecalho__lista {
+        gap: 0.6rem;
+    }
+
+    .cabecalho__link {
+        font-size: 1.15rem;
+        padding: 0.9rem 1rem;
+    }
+
+    .home,
+    .sobre,
+    .impacto,
+    .faq {
+        width: min(100% - 2.5rem, 1120px);
+    }
+
+    .card_container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
