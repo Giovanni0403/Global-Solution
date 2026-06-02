@@ -35,7 +35,6 @@ footer {
 
 /* Navegacao principal do cabecalho */
 .cabecalho__navbar {
-  /* CORRIGIR AQUI: o grid separa a logo na esquerda e reserva o centro para o menu */
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
@@ -43,7 +42,6 @@ footer {
 }
 
 .cabecalho__logo-link {
-  /* CORRIGIR AQUI: a logo ocupa a primeira coluna, do lado esquerdo */
   grid-column: 1;
   justify-self: start;
   margin-left: 8rem;
@@ -54,7 +52,6 @@ footer {
   display: flex;
   align-items: center;
   gap: 2rem;
-  /* CORRIGIR AQUI: a lista fica na coluna do meio, centralizada na tela */
   justify-content: center;
   grid-column: 2;
   justify-self: center;
