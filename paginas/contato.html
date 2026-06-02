@@ -7,12 +7,11 @@
 </head>
 <body class="pagina-contato">
     <header class="cabecalho">
-      <input type="checkbox" id="menu-toggle" class="menu-toggle">
-      <label for="menu-toggle" class="menu-hamburguer" aria-label="Abrir menu">
+      <button class="menu-hamburguer" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
         <span></span>
         <span></span>
         <span></span>
-      </label>
+      </button>
       <nav class="cabecalho__navbar">
         <!-- CORRIGIR AQUI: a logo fica fora da lista para poder ficar sozinha na esquerda -->
         <a class="cabecalho__logo-link" href="../index.html">
@@ -20,7 +19,7 @@
         </a>
 
         <!-- CORRIGIR AQUI: a lista fica apenas com os links para eles poderem ficar centralizados -->
-        <ul class="cabecalho__lista">
+        <ul class="cabecalho__lista" id="menu-principal">
           <li class="cabecalho__list-item">
             <a class="cabecalho__link" href="../index.html">Home</a>
           </li>
@@ -93,6 +92,7 @@
     <footer>
         <p> 2026 Global Solution.&copy; Todos os direitos reservados.</p>
     </footer>
+    <script src="../js/responsividade.js"></script>
     <script src="../js/contato.js"></script>
 </body>
 </html>

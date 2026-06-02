@@ -82,6 +82,10 @@ footer {
     height: auto;
 }
 
+.menu-hamburguer {
+    display: none;
+}
+
 .pagina-home,
 .pagina-faq,
 .pagina-sobre,
