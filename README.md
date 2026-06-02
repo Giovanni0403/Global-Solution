@@ -23,6 +23,10 @@ giovanni.jpg
 logo.png
 murilo.jpg
 thiago.jpg
+home-desktop.png
+menu-mobile.png
+integrantes-tablet.png
+pagina-de-contato.png
 
 css/
 base.css
