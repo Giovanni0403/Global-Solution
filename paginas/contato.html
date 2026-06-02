@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +16,7 @@
       <nav class="cabecalho__navbar">
         <!-- CORRIGIR AQUI: a logo fica fora da lista para poder ficar sozinha na esquerda -->
         <a class="cabecalho__logo-link" href="../index.html">
-          <img src="../assents/logo.png" class="logo" alt="Logo EcoSoul">
+          <img src="../assets/logo.png" class="logo" alt="Logo EcoSoul">
         </a>
 
         <!-- CORRIGIR AQUI: a lista fica apenas com os links para eles poderem ficar centralizados -->
@@ -24,7 +25,7 @@
             <a class="cabecalho__link" href="../index.html">Home</a>
           </li>
           <li class="cabecalho__list-item">
-            <a class="cabecalho__link" href="./integrante.html">Integrantes</a>
+            <a class="cabecalho__link" href="./integrantes.html">Integrantes</a>
           </li>
           <li class="cabecalho__list-item">
             <a class="cabecalho__link" href="./sobre.html">Sobre</a>
@@ -43,20 +44,20 @@
     </header>
     <main class="contato-main">
       <div class="contato-form-col">
-        <h2 class="contato-titulo">Entrar em contato!</h2>
+        <h1 class="contato-titulo">Entrar em contato!</h1>
         <div class="contato-linha-vermelha"></div>
         <form class="contato-form" id="form-contato" name="dados" action="https://formsubmit.co/ajax/giovanni.zavam2008@gmail.com" method="POST">
           <input type="hidden" name="_subject" value="Nova mensagem do site SkyLink">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
           <label for="idNome">Nome:</label>
-          <input id="idNome" type="text" name="nome" placeholder="Enter your Name" required>
+          <input id="idNome" type="text" name="nome" placeholder="Colque seu nome" required>
           <label for="idEmail">E-mail:</label>
-          <input id="idEmail" type="email" name="email" placeholder="Enter a valid email address" required>
+          <input id="idEmail" type="email" name="email" placeholder="Me informe seu e-mail" required>
           <label for="idTelefone">Telefone:</label>
-          <input id="idTelefone" type="tel" name="telefone" placeholder="Enter your phone" required>
+          <input id="idTelefone" type="tel" name="telefone" placeholder="Informe seu telefone" required>
           <label for="mensagem">Como posso te ajudar?</label>
-          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Enter your message" required></textarea>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Me conte como posso te ajudar" required></textarea>
           <div class="contato-botoes">
             <button type="submit" class="btn-enviar">Enviar</button>
             <button type="reset" class="btn-limpar">Limpar</button>
