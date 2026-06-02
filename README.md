@@ -38,6 +38,7 @@ sobre.css
 js/
 contato.js
 index.js
+faq.js
 responsividade.js
 
 paginas/
@@ -67,7 +68,7 @@ estao localizadas dentro do assets
 
 ![Home desktop](./assets/home-desktop.png)
 ![Menu mobile](./assets/menu-mobile.png)
-![Integrantes tablet](./assets/home-desktop.png)
+![Integrantes tablet](./assets/integrantes-tablet.png)
 ![Pagina de contato](./assets/pagina-de-contato.png)
 
 
