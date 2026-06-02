@@ -15,25 +15,6 @@ O projeto foi criado com foco em estrutura semantica, navegacao entre paginas, r
 - Git e GitHub
 - FormSubmit para envio de formulario
 
-## Paginas do Site
-
-- `index.html` - pagina inicial com apresentacao da proposta SkyLink.
-- `paginas/integrantes.html` - equipe do projeto com nome, RM, turma, foto, GitHub e LinkedIn.
-- `paginas/sobre.html` - descricao do projeto, missao, visao e diferenciais.
-- `paginas/impacto.html` - impacto social, beneficios e indicadores esperados da solucao.
-- `paginas/faq.html` - perguntas frequentes sobre o funcionamento do SkyLink.
-- `paginas/contato.html` - formulario funcional para envio de mensagens.
-
-## Funcionalidades
-
-- Menu responsivo com botao hamburger para mobile e tablet.
-- Navegacao entre todas as paginas.
-- Formulario de contato com campos obrigatorios e feedback visual ao usuario.
-- Interacao em JavaScript na pergunta final da pagina inicial.
-- Layout responsivo para smartphone, tablet e desktop.
-- Conteudo organizado com HTML semantico.
-- CSS modularizado por pagina e arquivo global de responsividade.
-
 ## Estrutura de Pastas
 
 assets/
@@ -80,6 +61,22 @@ As imagens utilizadas no projeto estao na pasta `assets/`:
 - `arthur.jpg` - foto do integrante Arthur.
 - `thiago.jpg` - foto do integrante Thiago.
 
+## imagens de funcionalidade
+
+estao localizadas dentro do assets
+
+![Home desktop](./assets/home-desktop.png)
+![Menu mobile](./assets/menu-mobile.png)
+![Integrantes tablet](./assets/home-desktop.png)
+![Pagina de contato](./assets/pagina-de-contato.png)
+
+
+## Repositorio
+
+Link do repositorio no GitHub:
+
+[https://github.com/Giovanni0403/Global-Solution.git](https://github.com/Giovanni0403/Global-Solution.git)
+
 ## Integrantes
 
 ### Giovanni Lopez Zavam
@@ -109,12 +106,6 @@ As imagens utilizadas no projeto estao na pasta `assets/`:
 - Turma: 1TDSPH
 - GitHub: <https://github.com/Euthiaguera>
 - LinkedIn: <https://www.linkedin.com/in/thiago-andrade-08b2b6321/>
-
-## Repositorio
-
-Link do repositorio no GitHub:
-
-[https://github.com/Giovanni0403/Global-Solution.git](https://github.com/Giovanni0403/Global-Solution.git)
 
 ## Contato
 
