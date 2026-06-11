@@ -82,6 +82,9 @@ Link do repositorio no GitHub:
 
 [https://github.com/Giovanni0403/Global-Solution.git](https://github.com/Giovanni0403/Global-Solution.git)
 
+## link do video do grupo 
+https://youtu.be/xNMo3nEzpN4
+
 ## Integrantes
 
 ### Giovanni Lopez Zavam
